@@ -1,0 +1,10 @@
+{
+  "appId": "com.capasitor.app",
+  "appName": "capasitor",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}

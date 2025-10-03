@@ -1,0 +1,27 @@
+{
+  "globalDependencies": [".env"],
+  "tasks": {
+    "build:styles": {
+      "dependsOn": ["^build:styles"],
+      "outputs": ["dist/**/*.css"]
+    },
+    "build:watch": {
+      "dependsOn": ["^build:watch"],
+      "outputs": ["dist/**", "dist/**/*.d.ts"]
+    },
+    "build:web": {
+      "dependsOn": ["^build:web", "^build:styles"],
+      "outputs": ["dist/**", "dist/**/*.d.ts"]
+    },
+    "dev": {
+      "with": ["component-library#build:watch"],
+      "persistent": true,
+      "cache": false
+    },
+    "build:capasitor": {
+      "dependsOn": ["^build:capasitor"],
+      "outputs": ["android/**", "ios/**"],
+      "cache": true
+    }
+  }
+}

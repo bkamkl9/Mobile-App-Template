@@ -1,0 +1,26 @@
+{
+  "name": "capasitor",
+  "version": "1.0.0",
+  "description": "An Amazing Capacitor App",
+  "type": "module",
+  "keywords": [
+    "capacitor",
+    "mobile"
+  ],
+  "scripts": {
+    "build:capasitor": "cp -r ./node_modules/mobile/dist ./dist && npx cap sync"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/camera": "latest",
+    "@capacitor/core": "latest",
+    "@capacitor/ios": "^7.4.3",
+    "@capacitor/splash-screen": "latest",
+    "mobile": "workspace:*"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "latest"
+  },
+  "author": "",
+  "license": "ISC"
+}
