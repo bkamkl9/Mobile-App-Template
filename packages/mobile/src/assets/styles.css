@@ -1,1 +1,2 @@
 @import 'tailwindcss';
+@import 'component-library/colors.css' layer(theme);
