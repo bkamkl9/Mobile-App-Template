@@ -1,7 +1,4 @@
 {
-  "extends": [
-    "typescript-config/vue-app-configuration/tsconfig.json"
-  ],
   "compilerOptions": {
     "declaration": true,
     "declarationDir": "dist",

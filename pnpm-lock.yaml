@@ -88,16 +88,19 @@ importers:
       vue:
         specifier: ^3.5.22
         version: 3.5.22(typescript@5.9.3)
+      vue-router:
+        specifier: '4'
+        version: 4.5.1(vue@3.5.22)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
         version: 6.0.1(vite@7.1.9)(vue@3.5.22)
+      '@vue/tsconfig':
+        specifier: ^0.8.1
+        version: 0.8.1(typescript@5.9.3)(vue@3.5.22)
       npm-run-all2:
         specifier: ^8.0.4
         version: 8.0.4
-      typescript-config:
-        specifier: workspace:*
-        version: link:../typescript-config
       vite:
         specifier: ^7.1.7
         version: 7.1.9
@@ -118,7 +121,7 @@ importers:
         version: 22.18.8
       '@vue/tsconfig':
         specifier: ^0.8.1
-        version: 0.8.1(typescript@5.9.3)
+        version: 0.8.1(typescript@5.9.3)(vue@3.5.22)
       typescript:
         specifier: ~5.9.0
         version: 5.9.3
@@ -1450,6 +1453,10 @@ packages:
       he: 1.2.0
     dev: true
 
+  /@vue/devtools-api@6.6.4:
+    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
+    dev: false
+
   /@vue/devtools-core@8.0.2(vite@7.1.9)(vue@3.5.22):
     resolution: {integrity: sha512-V7eKTTHoS6KfK8PSGMLZMhGv/9yNDrmv6Qc3r71QILulnzPnqK2frsTyx3e2MrhdUZnENPEm6hcb4z0GZOqNhw==}
     peerDependencies:
@@ -1552,7 +1559,7 @@ packages:
   /@vue/shared@3.5.22:
     resolution: {integrity: sha512-F4yc6palwq3TT0u+FYf0Ns4Tfl9GRFURDN2gWG7L1ecIaS/4fCIuFOjMTnCyjsu/OK6vaDKLCrGAa+KvvH+h4w==}
 
-  /@vue/tsconfig@0.8.1(typescript@5.9.3):
+  /@vue/tsconfig@0.8.1(typescript@5.9.3)(vue@3.5.22):
     resolution: {integrity: sha512-aK7feIWPXFSUhsCP9PFqPyFOcz4ENkb8hZ2pneL6m2UjCkccvaOhC/5KCKluuBufvp2KzkbdA2W2pk20vLzu3g==}
     peerDependencies:
       typescript: 5.x
@@ -1564,6 +1571,7 @@ packages:
         optional: true
     dependencies:
       typescript: 5.9.3
+      vue: 3.5.22(typescript@5.9.3)
     dev: true
 
   /@xmldom/xmldom@0.8.11:
@@ -3273,6 +3281,15 @@ packages:
   /vscode-uri@3.1.0:
     resolution: {integrity: sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ==}
     dev: true
+
+  /vue-router@4.5.1(vue@3.5.22):
+    resolution: {integrity: sha512-ogAF3P97NPm8fJsE4by9dwSYtDwXIY1nFY9T6DyQnGHd1E2Da94w9JIolpe42LJGIl0DwOHBi8TcRPlPGwbTtw==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': 6.6.4
+      vue: 3.5.22(typescript@5.9.3)
+    dev: false
 
   /vue-tsc@3.1.0(typescript@5.9.3):
     resolution: {integrity: sha512-fbMynMG7kXSnqZTRBSCh9ROYaVpXfCZbEO0gY3lqOjLbp361uuS88n6BDajiUriDIF+SGLWoinjvf6stS2J3Gg==}

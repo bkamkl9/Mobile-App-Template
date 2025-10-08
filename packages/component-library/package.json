@@ -12,7 +12,8 @@
       "import": "./dist/component-library.js",
       "require": "./dist/component-library.cjs"
     },
-    "./index.css": "./dist/index.css",
+    "./index.css": "./dist/component-library.css",
+    "./component-library.css": "./dist/component-library.css",
     "./colors.css": "./dist/colors.css"
   },
   "files": [
